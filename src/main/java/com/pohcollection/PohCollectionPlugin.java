@@ -27,13 +27,13 @@ public class PohCollectionPlugin extends Plugin
 	@Override
 	protected void startUp() throws Exception
 	{
-		log.debug("Example started!");
+		log.debug("PoH Collection started.");
 	}
 
 	@Override
 	protected void shutDown() throws Exception
 	{
-		log.debug("Example stopped!");
+		log.debug("PoH Collection stopped.");
 	}
 
 	@Subscribe

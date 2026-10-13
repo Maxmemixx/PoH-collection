@@ -27,7 +27,7 @@ dependencies {
 	testImplementation group: 'net.runelite', name:'jshell', version: runeLiteVersion
 }
 
-group = 'com.example'
+group = 'com.pohcollection'
 
 tasks.withType(JavaCompile).configureEach {
 	options.encoding = 'UTF-8'
@@ -36,7 +36,7 @@ tasks.withType(JavaCompile).configureEach {
 
 tasks.register('run', JavaExec) {
 	classpath = sourceSets.test.runtimeClasspath
-	mainClass = pluginMainClass
+	mainClass = 'com.pohcollection.PohCollectionPluginTest'
 
 	jvmArgs "-ea"
 	args "--developer-mode", "--debug"
